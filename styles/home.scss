@@ -1,0 +1,358 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// @import "bootstrap-sprockets";
+// @import "bootstrap"; 
+
+$red: #cc0000;
+$back: #e68a00;
+
+@font-face {
+	font-family: 'nashville';
+	src: asset-url('/fonts/nashvill.ttf');
+	// src: local('nashville'), local('nashville'), url('app/assets/fonts/nashvill.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// html {
+// 	overflow-y: scroll;
+// }
+
+.container {
+	width: 75%;
+}
+
+.icon {
+	margin: 22px auto 0 auto;
+	width: 700px;
+}
+
+.navbar {
+	background: $back;
+	height: 300px;
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: 2px 2px 4px ;
+}
+
+.front {
+	box-sizing: border-box;
+	width: 50%;
+	box-shadow: -3px 3px 6px;
+	margin: 5px;
+	//margin-bottom: 25px;
+	float: left;
+}
+#front_img {
+	float: left;
+	margin-bottom: 40px;
+	// box-sizing: border-box;
+}
+
+/* RIGHT SIDE */
+
+#map {
+	// float: left;
+	width: 100%;
+	height: 250px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#contact {
+	margin-top: 20px;
+	padding: 0;
+	font-width: 2em;
+	font-size: 20px;
+	clear: left;
+	color: black;
+	a {
+		text-decoration: none;
+		text-align: center;
+		font-size: 28px;
+		color: black;
+		&:hover, &:link, &:visited {
+			text-decoration: none;
+		}
+	}
+
+	p {
+		font-family: nashville, sans-serif;
+		text-align: center;
+	}
+}
+
+#right {
+	padding-left: 15px;
+}
+
+#center, #bio {
+	border: 1px solid black;
+	border-top: 0;
+	border-bottom: 0;
+	font-size: 20px;
+	text-align: justify;
+}
+
+#thomas {
+	font-size: 23px;
+}
+
+#ipad_fix {
+	display: none;
+}
+
+#fb {
+	margin-top: 10px;
+	margin-bottom: 40px;
+	float: left;
+}
+
+#fb-long {
+	margin: auto;
+	margin-top: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+#fbsmall {
+	display: none;
+}
+
+#fblarge {
+	display: inline;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#leftad, #centerad, #bannerad, #bio {
+	display: none;
+}
+
+
+
+
+/*									*
+ *								 	*
+ *									*
+ *	Media Queries		*
+ *									*
+ *									*
+ *									*/
+
+
+
+
+@media (min-width: 1400px) {
+	.front {
+		width: 47%;
+	}
+
+	#thomas {
+		font-size: 28px;
+	}
+
+	#leftad {
+		display: block;
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1508px) {
+	.front {
+		width: 45%;
+		// margin: auto;
+	}
+}
+
+@media (max-width: 1400px) {
+
+
+	.front {
+		width: 80%;
+		margin: 15px;
+	}
+
+	.container {
+		width: 85%;
+	}
+
+	#center {
+		margin-top: 10px;
+	}
+
+	.goaway {
+		display: none;
+	}
+
+	#centerad {
+		display: block;
+	}
+}
+
+@media (max-width: 991px) {
+	#map {
+		width: 100%;
+		height: 100px;
+	}
+
+	#contact {
+		font-size: 12px;
+		a {
+			font-size: 15px;
+		}
+	}
+
+	#thomas {
+		font-size: 20px;
+	}
+
+	#fblarge {
+		display: none;
+	}
+
+	#fbsmall {
+		display: inline;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.col-xs-12.fb-like {
+		padding: 0px;
+		margin: auto;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.icon {
+		width: 400px;
+		margin: auto;
+		margin-top: 40px;
+	}
+	.goaway {
+		display: none;
+	}
+
+	.navbar {
+		height: 225px;
+	}
+
+	#front_img, #center {
+ 		display: none;
+	}
+
+	#bio {
+		display: block;
+	}
+
+	.col-xs-6 {
+		padding: 0px;
+	}
+
+	.pic {
+		box-sizing: border-box;
+		box-shadow: -3px 3px 6px;
+		width: 95%;
+		padding: 0px;
+		margin-bottom: 5px;
+	}
+
+	#centerad {
+		display: none;
+	}
+
+	#bannerad {
+		display: block;
+		text-align: center;
+	}
+  
+  #bannerad > * {
+		margin: auto;
+  }	
+
+	#map {
+		width: 100%;
+		height: 150px;
+		margin: auto;
+	}
+
+	#center, #bio {
+		border: 0;
+	}
+
+	#contact {
+		font-size: 2.5vw;
+		margin: auto;
+
+		p {
+			position: relative;
+			text-align: center;
+			right: 0;
+			margin: auto;
+		}
+
+		a {
+			position: relative;
+			margin: auto;
+			right: 0;
+			text-align: center;
+		}
+	}
+
+
+	#ipad_fix {
+		display: block;
+		width: 40%;
+		margin: auto;
+	}
+}
+
+/* Extra Small */
+
+@media (max-width: 425px) {
+	.icon {
+		width: 250px;
+		margin-top: 20px;
+	}
+
+	.navbar {
+		height: 128px;
+	}
+
+	#bio {
+		font-size: 4vw;
+	}
+
+	#front_img {
+		width: 100%;
+		clear: right;
+	}
+
+	#fb {
+		margin: 10px 0 5px 0;
+	}
+
+	#map {
+		width: 100%;
+		margin: 10px auto 0;
+	}
+
+	#contact {
+		margin-bottom: 10px;
+		a {
+			font-size: 4vw;
+		}
+
+		p {
+			font-size: 2.5vw;
+		}
+	}
+
+	.col-xs-6 {
+		padding: 0px;
+	}
+}
