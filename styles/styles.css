@@ -108,7 +108,10 @@
     font-size: 28px; }
 
   #leftad {
-    display: block; } }
+    display: inline-block;
+    clear: all;
+    margin: 0;
+    padding: 0; } }
 @media (min-width: 1400px) and (max-width: 1508px) {
   .front {
     width: 45%; } }
@@ -127,7 +130,10 @@
     display: none; }
 
   #centerad {
-    display: block; } }
+    display: inline-block;
+    clear: all;
+    margin: 0;
+    padding: 0; } }
 @media (max-width: 991px) {
   #map {
     width: 100%;
@@ -185,7 +191,10 @@
     display: none; }
 
   #bannerad {
-    display: block;
+    display: inline-block;
+    clear: all;
+    margin: 0;
+    padding: 0;
     text-align: center; }
 
   #bannerad > * {
