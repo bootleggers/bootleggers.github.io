@@ -198,6 +198,7 @@
   #bannerad {
     display: inline-block;
     clear: all;
+    margin: auto;
     padding: 0;
     text-align: center; }
 
