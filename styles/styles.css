@@ -1,4 +1,4 @@
-@font-face {
+@font-face { 
   font-family: 'nashville';
   src: asset-url("/fonts/nashvill.ttf");
   font-weight: normal;
@@ -113,8 +113,11 @@
 
   #leftad {
     display: inline-block;
-    clear: all;
-    padding: 0; } }
+    clear: left;
+    padding: 0;
+    margin: auto;
+    }
+ }
 @media (min-width: 1400px) and (max-width: 1508px) {
   .front {
     width: 45%; } }
